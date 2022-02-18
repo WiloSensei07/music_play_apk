@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="TP_WinIoT_4.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TP_WinIoT_4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+    <Grid Width="600" Height="700">
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/back.jpg" Stretch="Fill"></ImageBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" MinHeight="40"/>
+            <RowDefinition Height="auto" MinHeight="100"/>
+            <RowDefinition Height="auto" MinHeight="100"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Content="Synthèse" Margin="224,0,0,0" HorizontalAlignment="Left" Click="Button_Click"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Height="250" Width="320">
+            <ListBox x:Name="listmp3" Height="250" Width="200">
+            </ListBox>
+            <Image Source="Assets/mp3.jpg" HorizontalAlignment="Right" Name="file" Width="70" Margin="20"></Image>
+        </StackPanel>
+        <MediaElement Grid.Row="2" Width="100" Height="20"></MediaElement>
+        <StackPanel Grid.Row="2" Height="60" Width="360" Orientation="Horizontal">
+            <Image Source="Assets/pause.png" HorizontalAlignment="Center" Name="pause" Width="50" Margin="20,5,20,5" PointerPressed="Pause_PointerPressed="></Image>
+            <Image Source="Assets/play.png" HorizontalAlignment="Center" Name="play" Width="50" Margin="20,5,20,5" PointerPressed="Play_PointerPressed="></Image>
+            <Image Source="Assets/stop.png" HorizontalAlignment="Center" Name="stop" Width="50" Margin="20,5,20,5" PointerPressed="Stop_PointerPressed="></Image>
+            <Image Source="Assets/info.jpg" HorizontalAlignment="Center" Name="info" Width="50" Margin="20,5,20,5" PointerPressed="Info_PointerPressed"></Image>
+        </StackPanel>
+        <Slider Grid.Row="2" Height="40" Width="100" Name="volumeslider" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10,150,0,20"></Slider>
+
+    </Grid>
+</Page>
