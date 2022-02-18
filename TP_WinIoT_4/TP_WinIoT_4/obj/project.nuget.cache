@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2FVqjOGrZypPTI6SVIlFiV39bUM6zTZyHf+3T/O8OWPkpqANiJjYeHB/bGfxvel03YHLOEg/3UlJUzSeugB3bQ==",
+  "dgSpecHash": "aTSwoxgdbHQVNrlaPNZ+7BdZisct8YG7Fijhi4HCBySdNcxkxOhJIiWUgicZAvpTtYv8h9ejRmXAIYsQyBAE+Q==",
   "success": true,
-  "projectFilePath": "D:\\3iL3\\Dev & Win IoT\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4.csproj",
+  "projectFilePath": "D:\\projet3iLDev\\music_play_apk\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sinka\\.nuget\\packages\\microsoft.net.native.compiler\\2.2.10-rel-29722-00\\microsoft.net.native.compiler.2.2.10-rel-29722-00.nupkg.sha512",
     "C:\\Users\\Sinka\\.nuget\\packages\\microsoft.net.uwpcoreruntimesdk\\2.2.12\\microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",

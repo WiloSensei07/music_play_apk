@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\3iL3\\Dev & Win IoT\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4.csproj": {}
+    "D:\\projet3iLDev\\music_play_apk\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4.csproj": {}
   },
   "projects": {
-    "D:\\3iL3\\Dev & Win IoT\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4.csproj": {
+    "D:\\projet3iLDev\\music_play_apk\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\3iL3\\Dev & Win IoT\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4.csproj",
+        "projectUniqueName": "D:\\projet3iLDev\\music_play_apk\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4.csproj",
         "projectName": "TP_WinIoT_4",
-        "projectPath": "D:\\3iL3\\Dev & Win IoT\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4.csproj",
+        "projectPath": "D:\\projet3iLDev\\music_play_apk\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4.csproj",
         "packagesPath": "C:\\Users\\Sinka\\.nuget\\packages\\",
-        "outputPath": "D:\\3iL3\\Dev & Win IoT\\TP_WinIoT_4\\TP_WinIoT_4\\TP_WinIoT_4\\obj\\",
+        "outputPath": "D:\\projet3iLDev\\music_play_apk\\TP_WinIoT_4\\TP_WinIoT_4\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
