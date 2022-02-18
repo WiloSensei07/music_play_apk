@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="TP4.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TP4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Width="500" Height="700" HorizontalAlignment="Center">
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/back.jpg" Stretch="Fill"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="40" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Button Content="Synthèse" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center" Height="32" Click="Button_Click"/>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Orientation="Horizontal" Height="350" Width="320">
+            <ListBox x:Name="listmp3" Width="200" Height="250"/>
+            <Image x:Name="File" HorizontalAlignment="Right" Source="Assets/mp3.jpg" Width="50" Height="100" Margin="20,5,20,5" PointerPressed="Mp3_PointerPressed"/>
+        </StackPanel>
+        <MediaElement x:Name="mediaEl" Grid.Row="2"  Width="100" Height="20"/>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Height="60" Width="360">
+            <Image x:Name="Pause" HorizontalAlignment="Center" Source="Assets/pause.png" Width="50" Height="100" Margin="20,5,20,5" PointerPressed="Pause_PointerPressed"/>
+            <Image x:Name="Play" PointerPressed="Play_PointerPressed" HorizontalAlignment="Center" Source="Assets/play.png" Width="50" Height="100" Margin="20,5,20,5"/>
+            <Image x:Name="Stop" HorizontalAlignment="Center" Source="Assets/stop.png" Width="50" Height="100" Margin="20,5,20,5" PointerPressed="Stop_PointerPressed"/>
+            <Image x:Name="Info" HorizontalAlignment="Center" Source="Assets/info.jpg" Width="50" Height="100" Margin="20,5,20,5" PointerPressed="Info_PointerPressed"/>
+        </StackPanel>
+        <Slider x:Name="volumeslider" HorizontalAlignment="Center" Height="40" Margin="0,150,0,0" Grid.Row="2" Width="200" VerticalAlignment="Bottom" ValueChanged="volumeslider_ValueChanged" Value="5" Maximum="10"/>
+        <Popup VerticalOffset="10" HorizontalOffset="200" x:Name="StandardPopup">
+            <Border BorderBrush="{StaticResource ApplicationForegroundThemeBrush}"
+                Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
+                BorderThickness="2" Width="200" Height="250">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <ListBox x:Name="list_Mp3" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,0,0,0" Width="200" Height="100"></ListBox>
+                    <Button Content="Ajouter" Click="AddMp3Clicked" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="30"/>
+                    <Button Content="Fermer" Click="ClosePopupClicked" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="30"/>
+                </StackPanel>
+            </Border>
+        </Popup>
+    </Grid>
+</Page>
